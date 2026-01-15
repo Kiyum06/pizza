@@ -55,14 +55,42 @@
             <!-- Toppigs -->
             <fieldset>
                 <legend>Select Toppings</legend>
+                <label for="pepperoni">
+                    <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">Pepperoni
+                </label>
+                <label for="mushrooms">
+                    <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">Mushrooms
+                </label>
+                <label for="artichokes">
+                    <input type="checkbox" id="artichokes" name="toppings[]" value="artichokes">Artichokes
+                </label>
+                <label for="tomatoes">
+                    <input type="checkbox" id="tomatoes" name="toppings[]" value="tomatoes">Tomatoes
+                </label>
+                <label for="Olives">
+                    <input type="checkbox" id="Olives" name="toppings[]" value="Olives">Olives
+                </label>
                 
             </fieldset>
 
             <!-- Size -->
             <fieldset>
                 <legend>Pizza Size</legend>
-                
+                <select name="size" id="size">
+                    <option value="none">-- Select a size --</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>              
             </fieldset>
+
+            <!-- Comment field -->
+             <label for="comment">Comment/Instructions:</label>
+             <textarea rows="5" id="comment" name="comment"></textarea>
+
+            <label for="discount">
+                <input type="checkbox" id="discount" name="discount" checked> Sign me up for the discounts!
+            </label>
 
 
             <!-- Submit button -->
