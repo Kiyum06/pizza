@@ -6,6 +6,7 @@ const app = express();
 
 //Define a port number where server will listen
 const PORT = 3000; 
+const HOST = "0.0.0.0";
 
 // Enable static file serving 
 app.use(express.static('public'));
@@ -63,6 +64,6 @@ app.post('/submit-order', (req, res) => {
 });
 
 // Start server and listed on designed port
-app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
+app.listen(PORT, HOST, () => {
+    console.log(`Server is running at http://${HOST}:${PORT}`);
 });
